@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Nihal - showcasing projects, skills, and contact information.">
+  <title>Nihal | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header role="banner">
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+    <section aria-labelledby="intro-title">
+      <h1 id="intro-title">Welcome to My Portfolio</h1>
+      <p>I’m Nihal, a developer passionate about AI, DBMS, OS, and performance metrics.</p>
+    </section>
+    <section id="weather-dashboard" aria-labelledby="weather-title">
+      <h2 id="weather-title">Live Weather Dashboard</h2>
+      <form id="weather-form" class="weather-form" role="search">
+        <label for="city-input">Search by city name</label>
+        <div class="input-row">
+          <input id="city-input" name="city" type="search" placeholder="e.g. London" required />
+          <button id="city-search" type="submit">Search</button>
+        </div>
+        <p class="hint">Uses Open-Meteo geocoding and forecast APIs (no API key required).</p>
+      </form>
+
+      <div id="weather-output" class="weather-output" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Nihal. All rights reserved.</p>
+  </footer>
+  <script src="weather.js" defer></script>
+</body>
+</html>
